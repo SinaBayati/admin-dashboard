@@ -7,6 +7,12 @@ body{
   font-family: "Roboto", sans-serif;
 }
 
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .root-container{
   display: grid;
   grid-template-columns: 240px 1fr;
@@ -19,6 +25,41 @@ body{
 .sidebar{
   grid-area: side;
   background-color: #1e90ff;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 1fr;
+  row-gap: 50px;
+  padding: 20px;
+}
+
+.sidebar .logo{
+  display: flex;
+  gap: 10px;
+  color: #ffffff;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.sidebar .logo > i{
+  font-size: 30px;
+}
+
+.sidebar .menu{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2,min-content);
+  align-items: start;
+  gap: 50px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.sidebar .menu li{
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .header{
