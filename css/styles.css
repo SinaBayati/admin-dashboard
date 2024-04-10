@@ -72,7 +72,7 @@ ul{
   grid-area: head;
   background-color: #ffffff;
   display: grid;
-  grid-template-columns: 1fr 200px;
+  grid-template-columns: 1fr 400px;
   grid-template-rows: 2fr 3fr;
   grid-template-areas: 
   "srch prfl"
@@ -84,7 +84,12 @@ ul{
 .search-bar{
   grid-area: srch;
   justify-self: start;
-  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar i{
+  font-size: 20px;
 }
 
 .search-bar input[type="search"]{
@@ -92,15 +97,15 @@ ul{
   border: none;
   padding: 5px 10px;
   border-radius: 15px;
-  width: 400px;
   margin-left: 10px;
+  width: 500px;
 }
 
 .profile{
   grid-area: prfl;
   justify-self: end;
   display: flex;
-  gap: 10px;
+  gap: 30px;
   align-items: center;
 }
 
@@ -111,7 +116,7 @@ ul{
 .profile-intro{
   grid-area: itro;
   display: grid;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: 80px 1fr;
   grid-template-rows: 1fr 1fr;
   align-items: center;
 }
@@ -140,9 +145,11 @@ ul{
   border: none;
   background-color: #1e90ff;
   color: #ffffff;
-  font-size: 12px;
-  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px 20px;
   border-radius: 15px;
+  margin-left: 10px;
 }
 
 .main{
