@@ -1,0 +1,32 @@
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+}
+
+.root-container{
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 120px 1fr;
+  grid-template-areas: 
+  "side head"
+  "side main";
+}
+
+.sidebar{
+  grid-area: side;
+  background-color: #1e90ff;
+}
+
+.header{
+  grid-area: head;
+  background-color: #ffffff;
+}
+
+.main{
+  grid-area: main;
+  background-color: #d3e5f5;
+}
